@@ -1,0 +1,23 @@
+---
+installation_method:
+  name: cocoapods
+workspace: Foo.xcworkspace
+target_definitions:
+  - abstract: true
+    children:
+      - abstract: true
+        name: Transitive Dependencies
+      - name: App-iOS
+      - name: App-macOS
+      - name: App-tvOS
+      - name: App-watchOS
+    dependencies:
+      - Bar:
+        - :path: "Bar.podspec"
+      - Foo:
+        - :path: "Foo.podspec"
+      - Foo/Tests:
+        - :path: "Foo.podspec"
+    name: Pods
+    user_project_path: Foo.xcodeproj
+    uses_frameworks: true

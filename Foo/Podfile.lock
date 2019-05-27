@@ -1,0 +1,25 @@
+PODS:
+  - Bar (1.0.0)
+  - Foo (1.0.0):
+    - Bar
+  - Foo/Tests (1.0.0):
+    - Bar
+
+DEPENDENCIES:
+  - Bar (from `Bar.podspec`)
+  - Foo (from `Foo.podspec`)
+  - Foo/Tests (from `Foo.podspec`)
+
+EXTERNAL SOURCES:
+  Bar:
+    :path: Bar.podspec
+  Foo:
+    :path: Foo.podspec
+
+SPEC CHECKSUMS:
+  Bar: b3c31773fc33f1812c4c1e27a1b814bd57fd6127
+  Foo: 556a03cafd27deb3541a38b967928cd3c644ceeb
+
+PODFILE CHECKSUM: 0f18a3ec56e00d371936bcfcb1a6e94a4f4fa4ac
+
+COCOAPODS: 1.7.0
